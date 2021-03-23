@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/prism.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/fav.PNG" type="image/png">
+    <title>SQL - All Know about sql</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <nav>
+                <div class="logo">SQL
+                </div>
+                <ul class="nav-links ">
+                    <li><a href="../index.html">Home</a></li>
+                        <li><a href="./create_database.html">Create Database</a></li>
+                        <li><a href="./drop_db.html">Drop Database</a></li>
+                        <li><a href="./create_table.html">Create Table</a></li>
+                        <li><a href="./drop_table.html">Drop Table</a></li>
+                        <li><a href="./alter_table.html">Alter Table</a></li>
+                        <li><a href="./crud.html">Crud Operations</a></li>
+                        <li><a href="./constraints.html">Constraints</a></li>
+                        <li><a href="./not_null.html">Not Null</a></li>
+                        <li><a href="./primary_key.html">Primary Key</a></li>
+                        <li><a href="./reference.html">Reference Link</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+        
+
+        <!-- Introduction -->
+        <section class="intro">
+            <div class="container">
+                <div class="title ">
+                    <h1>SQL ALTER TABLE Statement</h1>
+                    <div class="line"></div>
+                </div>
+                <div class="main-container">
+                    <div class="intro-container ">
+
+                    <div class="info-div">
+                        <h2>SQL ALTER TABLE Statement</h2>
+                        <p>The  <span>ALTER TABLE </span>statement is used to add, delete, or modify columns in an existing table.</p>
+                        <p>The <span>ALTER TABLE </span>statement is also used to add and drop various constraints on an existing table.</p>
+                  
+                       <div class="info-div">
+                           <h2>ALTER TABLE - ADD Column</h2>
+                           <p>To add a column in a table, use the following syntax:</p>
+<pre class="language-sql">
+<code class="language-sql">ALTER TABLE table_name
+ADD column_name datatype;</code></pre>
+<p>The following SQL adds an "Email" column to the "Customers" table:</p>
+<h2>Example</h2>
+<pre class="language-sql">
+<code class="language-sql">ALTER TABLE Customers
+ADD Email varchar(255);</code></pre>
+ </div> 
+<hr/>
+
+ <div class="info-div">
+    <h2>ALTER TABLE - DROP COLUMN</h2>
+    <p>To delete a column in a table, use the following syntax (notice that some database systems don't allow deleting a column):</p>
+<pre class="language-sql">
+<code class="language-sql">ALTER TABLE table_name
+DROP COLUMN column_name;</code></pre>
+<p>The following SQL deletes the "Email" column from the "Customers" table:</p>
+<h2>Example</h2>
+<pre class="language-sql">
+<code class="language-sql">ALTER TABLE Customers
+DROP COLUMN Email;</code></pre>
+</div> 
+<hr>
+
+    </div>
+        
+             
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>SuhasKamble 2021 | All right reserved</p>
+        </footer>
+    </main>
+    <script src="../js/prism.js"></script>
+    <script src="https://kit.fontawesome.com/7d678829bc.js" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
